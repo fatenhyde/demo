@@ -15,7 +15,7 @@ define('IFOOTER', HOME.DS."templates".DS.$template.DS."footer.php");
 
 
 $db = mysql_connect("localhost", "root", "") or die("Connection problem ...");
-mysql_select_db("databank_gst", $db);
+mysql_select_db("demo", $db);
 mysql_set_charset("UTF8");
 
 ?>
