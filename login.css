@@ -1,0 +1,13 @@
+
+.logo{
+     width: 260px;
+	 margin-bottom: 30px;
+}
+
+.bg-img{
+	background-image: url('./images/wallpaper.jpg');
+    background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
