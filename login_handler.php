@@ -7,8 +7,6 @@ jimport('logs.logs');
 pimport("kui.class.util");
 $ojUtil = new jutil();
 
-$salt = '$2a$07$99b8rN2N33rnn396h9ive$';
-
 $oPremis = new premis();
 $oLogs = new logs();
 
@@ -26,10 +24,10 @@ $flag = "N";
 
         while ($row = mysql_fetch_array($rs)) {
             $login_count = (int) $row['login_count'];
-            $decrypt = md5($Katalaluanlog);
+           
             if ($login_count < 3) {
 
-                if ($row['KataLaluan'] == crypt($Katalaluan, $salt)) {
+                if ($row['KataLaluan'] == $Katalaluan) {
                     if (strlen($Katalaluan) < 8) {
                         $err_msg .= "Katalaluan mesti sekurang-kurangnya 8 aksara";
                     }
