@@ -8,7 +8,7 @@ csrfProtector::init();
 $config = "gst.php";
 $lang = 'bm';
 define('HOME',dirname( __FILE__ ));
-define('APPNAME', 'databankgst');
+define('APPNAME', 'demo');
 define('DS', DIRECTORY_SEPARATOR);
 
 /* for relative path reference */
